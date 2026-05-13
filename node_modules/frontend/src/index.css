@@ -17,6 +17,19 @@ a.active hr{
     display: none;
 }
 
+/* Ensure all interactive elements have pointer cursor */
+button,
+[role="button"],
+a,
+input[type="checkbox"],
+input[type="radio"],
+select,
+textarea,
+[onclick],
+[role="link"] {
+    cursor: pointer;
+}
+
 @media (max-width :640px){
     a.active{
         background-color: black;

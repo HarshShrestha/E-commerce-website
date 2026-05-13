@@ -2,6 +2,7 @@ import { createContext, useEffect, useState } from "react";
 import {products} from '../assets/assets' //You’re loading your product list (likely an array of objects)
 import { toast } from "react-toastify";
 export const ShopContext = createContext() //This creates a global store . Any component can access it later using useContext
+import {useNavigate} from 'react-router-dom';
 
 //context provider function = > This is a wrapper component that will provide data to all child components
 const ShopContextProvider = (props) =>{
@@ -11,6 +12,7 @@ const ShopContextProvider = (props) =>{
     const [search,setSearch] = useState("");
     const [showSearch,setShowSearch] = useState(false);
     const [cartItems,setCartItems] = useState([]); //for cart items
+    const navigate = useNavigate();
 
     const addToCart = async(itemId,size) =>{
         if(!size){
@@ -75,7 +77,8 @@ const ShopContextProvider = (props) =>{
         products,
         search, setSearch, showSearch,setShowSearch,
         cartItems, addToCart , getCartCount , updateQuantity,
-        getCartAmount
+        getCartAmount, 
+        navigate
     }
     return (
         <ShopContext.Provider value={value}>

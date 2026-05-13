@@ -28,7 +28,7 @@ const Product = () => {
   },[productId,products])
 
   return productData ? (
-    <div className='border-t-2 pt-10 transition-opacity ease-in duration-500 opacity-100'>
+    <div className='border-t border-gray-300 pt-10 transition-opacity ease-in duration-500 opacity-100'>
       {/* Product Data  */}
       <div className="flex gap-12 sm:gap-12 flex-col sm:flex-row">
         {/* Product Images */}
@@ -64,7 +64,7 @@ const Product = () => {
                   {productData.sizes?.map((item,index)=>(
                     <button
                       onClick={() => setSize(item)}
-                      className={`py-2 px-4 bg-gray-100 border cursor-pointer ${item == size ? 'border-orange-500' : 'border-gray-100'}`}
+                      className={`py-2 px-4 bg-gray-100 border border-gray-300 cursor-pointer ${item == size ? 'border-orange-500' : 'border-gray-100'}`}
                       key={index}
                     >
                       {item}
@@ -84,10 +84,10 @@ const Product = () => {
       {/* --------------Description and reviews section------------------ */}
       <div className="mt-20">
         <div className="flex">
-          <b className="border px-5 py-3 text-sm">Description</b>
-          <p className="border px-5 py-3 text-sm">Reviews(122) </p>
+          <b className="border border-gray-300 px-5 py-3 text-sm">Description</b>
+          <p className="border border-gray-300 px-5 py-3 text-sm">Reviews(122) </p>
         </div>
-        <div className="flex flex-col gap-4 border px-6 py-6 text-sm text-gray-500">
+        <div className="flex flex-col gap-4 border border-gray-300 px-6 py-6 text-sm text-gray-500">
           <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam beatae consequuntur hic, magni dolore eos dolor minima non, cumque modi eaque harum ea rem. Molestias nostrum distinctio totam odio sint?
           Maiores at placeat dolore obcaecati architecto! Quo, dolorem autem possimus natus cumque eos minus aliquam nemo nihil pariatur quas? Corporis blanditiis natus magnam voluptatum dolorum corrupti qui omnis ipsa beatae.
           Doloribus reiciendis eaque officiis culpa quia voluptatibus saepe! Eaque sapiente, qui molestias aliquam vitae voluptatem quia, reprehenderit eius fuga harum ipsam mollitia provident nulla iure inventore deserunt voluptatum ea consequuntur!</p>
