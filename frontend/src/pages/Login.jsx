@@ -27,7 +27,7 @@ const Login = () => {
         }
       </div>
       <button className='bg-black text-white font-light px-8 py-2 mt-4'>{currentState==='login' ? 'Sign in' : 'Sign up'}</button>
-      <CartTotal />
+      {/* <CartTotal /> */}
     </form>
   )
 }
