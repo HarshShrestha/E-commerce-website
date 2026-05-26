@@ -15,7 +15,7 @@ const LatestCollection = () => {
         //get the latest products from the products array
         const latest = products.slice(-10); // Assuming you want the last 4 products as the latest collection
         setLatestProducts(latest);
-    }, [])
+    }, [products])
 
   return (
     <div>
