@@ -14,6 +14,7 @@ const ShopContextProvider = (props) =>{
     const [showSearch,setShowSearch] = useState(false);
     const [cartItems,setCartItems] = useState([]); //for cart items
     const [products,setProducts] = useState([]); //for products data , we will fetch it from backend and store it here
+    const [token,setToken] = useState(''); //for user token after login
     const navigate = useNavigate();
 
     const getProducts = async() =>{
@@ -101,7 +102,8 @@ const ShopContextProvider = (props) =>{
         cartItems, addToCart , getCartCount , updateQuantity,
         getCartAmount, 
         navigate,
-        backendURL
+        backendURL,
+        setToken, token
     }
     return (
         <ShopContext.Provider value={value}>

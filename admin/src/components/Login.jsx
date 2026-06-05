@@ -18,7 +18,7 @@ const Login = ({ setToken }) => {
                 //save the token now
                 setToken(response.data.token);
             }else{
-                toast.error(response.data.msg); //toastify
+                toast.error(response.data.message); //toastify
             }
         } catch (error) {
             console.error('Error occurred while logging in:', error);

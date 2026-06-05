@@ -20,7 +20,7 @@ const Orders = () => {
             return (
             <div key={index} className="py-4 border-b border-gray-300 text-gray-700 flex flex-col md:flex-row md:items-center md:justify-between gap-4">
               <div className='flex items-start gap-6 text-sm'>
-                <img src={item.image[0]} className='w-16 sm:w-20' alt="" />
+                <img src={item.images[0]} className='w-16 sm:w-20' alt="" />
                 <div>
                   <p className='sm:text-base font-medium'>{item.name}</p>
                   <div className='flex items-center gap-3 mt-2 text-case text-gray-700'>

@@ -22,12 +22,12 @@ const loginUser = async(req,res)=>{
             const token = createToken(user._id);
             res.json({success:true,token});
         }else{  //password didnt match
-            res.json({success:false,msg:"invalid credentials"});
+            res.json({success:false,message:"invalid credentials"});
         }
-        return res.json({success:true,msg:"login route"})
+        return res.json({success:true,message:"login route"})
     } catch (error) {
         console.log(error);
-        res.json({success:false,msg: error.message})
+        res.json({success:false,message: error.message})
     }
 }
 
@@ -38,17 +38,17 @@ const registerUser = async(req,res)=>{
         //checking if user already exists or not
         const exists = await userModel.findOne({email});
         if(exists){
-            return res.json({success:false , msg : "user already exists"})
+            return res.json({success:false , message : "user already exists"})
         }
 
         //Credential validator : else check if user email and password is valid
         //email 
         if(!validator.isEmail(email)){
-            return res.json({success:false , msg : "please enter a valid email"})
+            return res.json({success:false , message : "please enter a valid email"})
         }
         //password 
         if(password.length < 8){
-            return res.json({success:false , msg : "please enter a strong password"})
+            return res.json({success:false , message : "please enter a strong password"})
         }
 
         //form the user credentials but...
@@ -69,7 +69,7 @@ const registerUser = async(req,res)=>{
 
     }catch(error){
         console.log(error);
-        res.json({success:false,msg: error.message})
+        res.json({success:false,message: error.message})
     }
 }
 
@@ -85,11 +85,11 @@ const adminLogin = async(req,res)=>{
             res.json({success:true,token});
             //then authenticate using this token via a middleware
         }else{
-            res.json({success:false,msg:"invalid credentials"});
+            res.json({success:false,message:"invalid credentials"});
         }
     } catch (error) {
         console.log(error);
-        res.json({success:false,msg: error.message})
+        res.json({success:false,message: error.message})
     }
 }
 
