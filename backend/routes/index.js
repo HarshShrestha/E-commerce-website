@@ -1,0 +1,13 @@
+import { Router } from "express";
+import healthRoutes from "./health.routes.js";
+import userRoutes from "./user.routes.js";
+import productRoutes from "./product.routes.js";
+import orderRoutes from "./order.routes.js";
+import newsletterRoutes from "./newsletter.routes.js";
+const router = Router();
+router.use("/health", healthRoutes);
+router.use("/user", userRoutes);
+router.use("/product", productRoutes);
+router.use("/order", orderRoutes);
+router.use("/newsletter", newsletterRoutes);
+export default router;

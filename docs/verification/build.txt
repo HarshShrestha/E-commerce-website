@@ -1,0 +1,35 @@
+
+> forever-ecommerce@1.0.0 build
+> npm run build --prefix frontend && npm run build --prefix admin
+
+
+> frontend@0.0.0 build
+> vite build
+
+vite v8.3.5 building client environment for production...
+transforming...
+✓ 74 modules transformed.
+rendering chunks...
+computing gzip size...
+dist/index.html                           0.61 kB │ gzip:  0.38 kB
+dist/assets/hero_img-DOCOb6wn.png       816.58 kB
+dist/assets/contact_img-CyOum2vk.png  1,062.42 kB
+dist/assets/about_img-BAJyTXw9.png    1,201.91 kB
+dist/assets/index-CBbOU6U8.css           24.07 kB │ gzip:  5.52 kB
+dist/assets/index-kPlM_RhQ.js           277.94 kB │ gzip: 89.63 kB
+
+✓ built in 217ms
+
+> admin@0.0.0 build
+> vite build
+
+vite v8.3.5 building client environment for production...
+transforming...
+✓ 35 modules transformed.
+rendering chunks...
+computing gzip size...
+dist/index.html                   0.46 kB │ gzip:  0.30 kB
+dist/assets/index-D_jKpEVN.css    9.70 kB │ gzip:  2.61 kB
+dist/assets/index-orE7aGvX.js   243.50 kB │ gzip: 77.46 kB
+
+✓ built in 283ms

@@ -1,0 +1,37 @@
+.admin-login {
+  max-width: 1200px;
+  margin: auto;
+  min-height: 100vh;
+  display: grid;
+  grid-template-columns: 1.2fr 1fr;
+  align-items: center;
+  gap: 120px;
+  padding: 64px;
+}
+.login-intro h1 {
+  font-size: 58px;
+  margin: 24px 0;
+}
+.login-intro p {
+  color: var(--muted);
+  max-width: 300px;
+}
+.login-form {
+  max-width: 400px;
+  width: 100%;
+}
+.login-form .wordmark {
+  margin-bottom: 48px;
+}
+.login-form h2 {
+  font-family: Georgia, serif;
+  font-size: 36px;
+  margin: 12px 0 28px;
+}
+.login-form button {
+  width: 100%;
+  margin-bottom: 20px;
+}
+.login-form .error {
+  margin-inline: 0;
+}

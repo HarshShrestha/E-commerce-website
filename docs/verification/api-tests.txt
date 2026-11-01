@@ -1,0 +1,48 @@
+
+> forever-ecommerce@1.0.0 test
+> node --test tests/*.test.mjs
+
+✔ health identifies in-memory demo (345.341698ms)
+✔ catalog exposes all 52 supplied products (5.186471ms)
+✔ bundled product photo is served (13.781757ms)
+✔ unknown product returns 404 (12.44884ms)
+✔ invalid registration is rejected (5.726759ms)
+✔ register hashes password and returns scoped identity (237.598395ms)
+✔ duplicate registration returns 409 (3.028762ms)
+✔ invalid login returns 401 (238.297824ms)
+✔ correct login and profile work (240.278904ms)
+✔ protected orders reject missing and tampered tokens (3.248726ms)
+✔ user cannot access admin routes (4.233593ms)
+✔ admin sign in uses separate role (3.674575ms)
+✔ empty bag, bad size and invalid quantities are rejected (9.689198ms)
+✔ address validation and payment validation work (3.535072ms)
+✔ deleted/unavailable products cannot be ordered (1.94819ms)
+✔ server ignores tampered prices and computes shipping (2.001658ms)
+✔ free shipping applies at the threshold (2.178509ms)
+✔ checkout retries and concurrent submissions are idempotent (5.37394ms)
+✔ duplicate product/size lines are rejected (1.690321ms)
+✔ orders are user-scoped (239.570706ms)
+✔ admin status changes appear in customer history (5.83718ms)
+✔ newsletter validates and deduplicates submissions (5.012518ms)
+✔ admin removal preserves historical order snapshots (3.936378ms)
+✔ unknown API route returns JSON 404 (0.923491ms)
+✔ backend has explicit responsibility boundaries (0.987309ms)
+✔ backend executable only starts and stops the application (0.343591ms)
+✔ React entry points are composition, not feature implementations (1.024744ms)
+✔ backend routes delegate to named controllers (0.383277ms)
+✔ image IDs are deterministic, versioned by contents and safe (1.47754ms)
+✔ bundled image discovery covers product, editorial and admin assets (52.109527ms)
+✔ duplicate images upload once, checkpoint each reference, then resume with no uploads (0.546626ms)
+✔ interrupted uploads preserve successful checkpoint and resume remaining files (0.642722ms)
+✔ catalog rewrite covers galleries and preserves product IDs, metadata and remote URLs (0.339408ms)
+✔ upload service rejects insecure provider URLs without checkpointing failure (0.197698ms)
+✔ CLI dry run requires no credentials and leaves catalog/editorial mapping unchanged (152.859992ms)
+✔ CLI prevents MongoDB synchronization in demo mode before any upload (144.791569ms)
+ℹ tests 36
+ℹ suites 0
+ℹ pass 36
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 1987.839757

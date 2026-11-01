@@ -1,0 +1,142 @@
+:root {
+  font-family: Arial, Helvetica, sans-serif;
+  background: #f7f7f2;
+  color: #282d24;
+  --bg: #f7f7f2;
+  --panel: #fff;
+  --soft: #efefe7;
+  --line: #dddfd5;
+  --ink: #282d24;
+  --muted: #656c5d;
+  --accent: #222;
+}
+* {
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+  font-size: 14px;
+  line-height: 1.6;
+}
+h1,
+h2,
+p {
+  margin: 0;
+}
+h1,
+h2 {
+  font-weight: 400;
+}
+h1 {
+  font-family: Georgia, serif;
+  font-size: 38px;
+  line-height: 1.2;
+  letter-spacing: -1px;
+}
+h2 {
+  font-size: 19px;
+}
+a {
+  color: inherit;
+  text-decoration: none;
+}
+button,
+input,
+select,
+textarea {
+  font: inherit;
+}
+button,
+.button {
+  cursor: pointer;
+  min-height: 46px;
+  border: 1px solid var(--accent);
+  border-radius: 5px;
+  background: var(--accent);
+  color: white;
+  padding: 10px 20px;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 14px;
+}
+button:disabled {
+  opacity: 0.5;
+  cursor: wait;
+}
+.outline {
+  background: transparent;
+  color: var(--ink);
+  border-color: var(--line);
+}
+.text {
+  background: none;
+  color: var(--ink);
+  text-decoration: underline;
+  border: 0;
+}
+.danger {
+  background: transparent;
+  color: #a3312b;
+  border: 1px solid #e9c5c2;
+  padding: 8px 12px;
+}
+.eyebrow {
+  font-size: 10px;
+  letter-spacing: 1.8px;
+  color: var(--muted);
+  font-weight: 600;
+  display: block;
+}
+.muted {
+  font-size: 12px;
+  color: var(--muted);
+}
+input,
+select,
+textarea {
+  color: var(--ink);
+  background: var(--panel);
+  border: 1px solid var(--line);
+  border-radius: 4px;
+  min-height: 46px;
+  padding: 10px 12px;
+  width: 100%;
+  min-width: 0;
+}
+label {
+  font-size: 13px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  margin-bottom: 20px;
+}
+fieldset {
+  border: 0;
+  padding: 0;
+  margin: 0 0 24px;
+}
+legend {
+  font-size: 13px;
+  margin-bottom: 12px;
+}
+input[type="checkbox"] {
+  width: 18px;
+  min-height: 18px;
+  accent-color: var(--accent);
+}
+:focus-visible {
+  outline: 3px solid #7b9265;
+  outline-offset: 3px;
+}
+.wordmark {
+  display: inline-flex;
+  align-items: center;
+  min-height: 44px;
+}
+.brand-art {
+  display: block;
+  width: 155px;
+  height: auto;
+  max-width: 100%;
+}

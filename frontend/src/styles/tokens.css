@@ -1,0 +1,16 @@
+:root {
+  font-family: Outfit, Arial, sans-serif;
+  font-synthesis: none;
+  --canvas: #ffffff;
+  --surface: #f8f8f8;
+  --ink: #374151;
+  --muted: #5d6573;
+  --line: #d1d5db;
+  --control: #858580;
+  --accent: #222;
+  --brand: #c586a5;
+  --white: #fff;
+  --danger: #a32821;
+  color: var(--ink);
+  background: var(--canvas);
+}

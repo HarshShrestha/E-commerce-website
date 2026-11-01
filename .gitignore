@@ -1,0 +1,16 @@
+node_modules/
+**/node_modules/
+**/dist/
+**/build/
+**/.env
+**/.env.*
+!**/.env.example
+.vercel/
+test-results/
+*.log
+
+# Local upload state and rollback data (URLs, not secrets; keep locally for resume).
+backend/data/cloudinary-manifest.json
+backend/data/catalog.local-backup.json
+backend/data/*.tmp
+frontend/src/data/*.tmp

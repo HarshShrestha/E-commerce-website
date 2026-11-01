@@ -1,0 +1,301 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+  font-size: 16px;
+  line-height: 1.5;
+}
+a {
+  color: inherit;
+  text-decoration: none;
+}
+button,
+input,
+select,
+textarea {
+  font: inherit;
+}
+button,
+a,
+summary {
+  cursor: pointer;
+}
+button {
+  color: inherit;
+  background: none;
+  border: 0;
+}
+button:disabled {
+  opacity: 0.55;
+  cursor: wait;
+}
+img {
+  display: block;
+  max-width: 100%;
+}
+h1,
+h2,
+h3,
+p {
+  margin: 0;
+}
+h1,
+h2 {
+  font-weight: 500;
+  letter-spacing: 0;
+  line-height: 1.12;
+}
+h1 {
+  font-size: 42px;
+}
+h2 {
+  font-size: 30px;
+}
+h3 {
+  font-size: 16px;
+  font-weight: 500;
+}
+p {
+  color: var(--muted);
+}
+input,
+select,
+textarea {
+  color: var(--ink);
+  background: var(--canvas);
+  border: 1px solid var(--control);
+  border-radius: 0;
+  min-height: 48px;
+  min-width: 0;
+  padding: 10px 12px;
+}
+input[type="radio"],
+input[type="checkbox"] {
+  accent-color: var(--ink);
+  min-height: 20px;
+  width: 20px;
+  height: 20px;
+  padding: 0;
+}
+fieldset {
+  border: 0;
+  margin: 0;
+  padding: 0;
+}
+legend {
+  font-size: 14px;
+  font-weight: 600;
+  margin-bottom: 16px;
+}
+:focus-visible {
+  outline: 2px solid var(--ink);
+  outline-offset: 4px;
+}
+.shell {
+  width: 82%;
+  margin-inline: auto;
+  padding-inline: 0;
+}
+@media (max-width: 1023px) {
+  .shell {
+    width: 86%;
+  }
+}
+@media (max-width: 767px) {
+  .shell {
+    width: 90%;
+  }
+}
+@media (max-width: 640px) {
+  .shell {
+    width: calc(100% - 32px);
+  }
+}
+.section {
+  padding-block: 48px;
+}
+.eyebrow {
+  font-size: 14px;
+  font-weight: 500;
+  letter-spacing: 1px;
+}
+.button {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  gap: 24px;
+  min-height: 48px;
+  padding: 12px 24px;
+  background: #111;
+  color: #fff;
+  border: 1px solid #111;
+  font-size: 14px;
+  font-weight: 500;
+  border-radius: 0;
+}
+.button:hover {
+  opacity: 0.85;
+}
+.button.outline {
+  background: transparent;
+  color: var(--ink);
+  border-color: var(--control);
+}
+.button.full {
+  width: 100%;
+}
+.icon-button {
+  width: 44px;
+  height: 44px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+.text-button {
+  font-size: 14px;
+  min-height: 44px;
+  padding: 0;
+  text-decoration: underline;
+  text-underline-offset: 4px;
+}
+.underlined {
+  display: inline-flex;
+  align-items: center;
+  gap: 16px;
+  min-height: 44px;
+  text-decoration: underline;
+  text-underline-offset: 4px;
+  font-size: 14px;
+}
+.muted {
+  font-size: 14px;
+  color: var(--muted);
+}
+.error-text {
+  color: var(--danger) !important;
+  font-size: 14px;
+  margin: 12px 0;
+}
+.success-text {
+  color: #305b30;
+}
+.skip {
+  position: absolute;
+  top: -100px;
+  z-index: 50;
+  background: var(--canvas);
+  padding: 12px;
+}
+.skip:focus {
+  top: 0;
+}
+.page-title {
+  margin-bottom: 36px;
+}
+.page-title h1 {
+  margin-top: 12px;
+}
+.page-title p {
+  margin-top: 14px;
+}
+.section-heading {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  gap: 24px;
+  margin-bottom: 28px;
+}
+.section-heading .page-title {
+  margin: 0;
+}
+.loading,
+.error-panel,
+.empty {
+  padding: 64px 24px;
+  text-align: center;
+}
+.empty > svg {
+  margin: 0 auto 24px;
+}
+.empty h1 {
+  font-size: 32px;
+}
+.empty p,
+.error-panel p {
+  margin: 16px auto 24px;
+  max-width: 460px;
+}
+.error-panel {
+  background: var(--surface);
+}
+.error-panel h2 {
+  font-size: 28px;
+}
+.disabled {
+  opacity: 0.5;
+}
+@media (max-width: 760px) {
+  .shell {
+    padding-inline: 0;
+  }
+  .section {
+    padding-block: 32px;
+  }
+  h1 {
+    font-size: 34px;
+  }
+  h2 {
+    font-size: 26px;
+  }
+  .page-title h1 {
+    font-size: 34px;
+  }
+  .page-title p {
+    font-size: 16px;
+  }
+  .section-heading {
+    gap: 16px;
+    align-items: flex-start;
+  }
+  .section-heading:has(.page-title) {
+    flex-direction: column;
+  }
+  .section-heading h2 {
+    font-size: 24px;
+  }
+  .empty h1 {
+    font-size: 28px;
+  }
+}
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    transition: none !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+main > .section,
+main > .auth-page {
+  border-top: 1px solid var(--line);
+}
+.page-title h1 {
+  text-transform: uppercase;
+  font-size: 30px;
+  color: #374151;
+}
+.page-title .eyebrow {
+  display: none;
+}
+.page-title h1::after {
+  content: "";
+  display: inline-block;
+  width: 48px;
+  height: 2px;
+  background: #374151;
+  vertical-align: middle;
+  margin-left: 12px;
+}

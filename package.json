@@ -1,0 +1,22 @@
+{
+  "name": "forever-ecommerce",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "setup": "npm ci --prefix backend && npm ci --prefix frontend && npm ci --prefix admin",
+    "dev": "node scripts/dev.mjs",
+    "build": "npm run build --prefix frontend && npm run build --prefix admin",
+    "lint": "npm run lint --prefix backend && npm run lint --prefix frontend && npm run lint --prefix admin",
+    "test": "node --test tests/*.test.mjs",
+    "test:e2e": "node tests/e2e.mjs",
+    "seed": "npm run seed --prefix backend",
+    "images:upload": "npm run images:upload --prefix backend --",
+    "test:motion": "node tests/motion.e2e.mjs"
+  },
+  "engines": {
+    "node": ">=24"
+  },
+  "devDependencies": {
+    "playwright": "^1.58.2"
+  }
+}

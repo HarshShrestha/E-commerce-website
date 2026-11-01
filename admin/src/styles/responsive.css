@@ -1,0 +1,240 @@
+@media (max-width: 1100px) {
+  .sidebar {
+    width: 200px;
+    padding-inline: 20px;
+  }
+  .workspace {
+    margin-left: 200px;
+  }
+  .admin-main {
+    padding: 28px;
+  }
+  .admin-header {
+    padding-inline: 28px;
+  }
+  .admin-login {
+    gap: 64px;
+    padding: 40px;
+  }
+  .login-intro h1 {
+    font-size: 48px;
+  }
+  .stats > div {
+    padding: 20px;
+  }
+  .order-body {
+    gap: 24px;
+  }
+}
+@media (max-width: 760px) {
+  .admin-layout {
+    flex-direction: column;
+  }
+  .sidebar {
+    position: static;
+    width: 100%;
+    padding: 20px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 16px;
+    border-right: 0;
+    border-bottom: 1px solid var(--line);
+  }
+  .sidebar > .eyebrow {
+    display: none;
+  }
+  .sidebar nav {
+    margin: 0;
+    flex-direction: row;
+    order: 3;
+    width: 100%;
+    justify-content: space-between;
+    gap: 8px;
+  }
+  .sidebar nav a {
+    font-size: 12px;
+    gap: 8px;
+    padding: 8px 12px;
+    min-height: 44px;
+  }
+  .sidebar-bottom {
+    margin: 0 0 0 auto;
+  }
+  .sidebar-bottom > span {
+    display: none;
+  }
+  .sidebar-bottom button {
+    min-height: 40px;
+    padding: 6px 12px;
+    font-size: 12px;
+  }
+  .workspace {
+    margin-left: 0;
+  }
+  .admin-header {
+    height: 64px;
+    padding-inline: 20px;
+    font-size: 10px;
+  }
+  .admin-main {
+    padding: 28px 20px;
+  }
+  .page-heading {
+    gap: 16px;
+    align-items: flex-start;
+    flex-direction: column;
+  }
+  .page-heading h1 {
+    font-size: 34px;
+  }
+  .stats {
+    gap: 10px;
+    margin-bottom: 24px;
+  }
+  .stats > div {
+    padding: 16px 12px;
+  }
+  .stats span {
+    font-size: 10px;
+  }
+  .stats strong {
+    font-size: 23px;
+  }
+  .panel-tools {
+    padding: 20px;
+    flex-wrap: wrap;
+  }
+  .panel-tools input {
+    max-width: none;
+  }
+  .product-form {
+    padding: 24px 20px;
+  }
+  .uploads {
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+  }
+  .upload {
+    height: 100px;
+  }
+  .form-grid {
+    gap: 12px;
+    grid-template-columns: 1fr 1fr;
+  }
+  .form-grid label:last-child {
+    grid-column: 1/-1;
+  }
+  .order {
+    padding: 20px;
+  }
+  .order-heading {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+  .order-heading label {
+    width: 100%;
+  }
+  .order-body {
+    grid-template-columns: 1fr;
+    gap: 16px;
+  }
+  .order-bottom {
+    flex-direction: column;
+    gap: 10px;
+  }
+  .admin-login {
+    grid-template-columns: 1fr;
+    padding: 32px 24px;
+  }
+  .login-intro {
+    display: none;
+  }
+  .login-form {
+    margin: auto;
+  }
+  .eyebrow {
+    font-size: 9px;
+  }
+  .error {
+    margin-inline: 0;
+  }
+  .demo {
+    font-size: 10px;
+  }
+  .order .eyebrow {
+    font-size: 10px;
+  }
+  .panel .error {
+    margin-inline: 16px;
+  }
+}
+@media (prefers-reduced-motion: reduce) {
+  * {
+    scroll-behavior: auto !important;
+  }
+}
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg: #191c17;
+    --panel: #22271e;
+    --soft: #30372a;
+    --line: #47513e;
+    --ink: #f0f2ec;
+    --muted: #b1bba7;
+    --accent: #4c633c;
+    background: var(--bg);
+    color: var(--ink);
+  }
+  .error {
+    background: #3c2421;
+    color: #ffb1a8;
+  }
+  .success {
+    background: #273b23;
+    color: #b9dca5;
+  }
+  .danger {
+    color: #ffb1a8;
+    border-color: #6e403a;
+  }
+}
+/* Supporting text stays readable at desktop and mobile sizes. */
+.eyebrow,
+.muted,
+.sidebar > .eyebrow,
+.sidebar nav a,
+.sidebar-bottom > span,
+.sidebar-bottom button,
+.admin-header,
+.demo,
+.stats span,
+th,
+td,
+.product-cell strong,
+.product-cell small,
+label,
+legend,
+.upload small,
+.error,
+.success,
+.order-heading p,
+.order-heading label,
+.order-item strong,
+.order-item p,
+address,
+.order-bottom {
+  font-size: 14px;
+}
+@media (max-width: 760px) {
+  .stats {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+  .stats > div:last-child {
+    grid-column: 1/-1;
+  }
+  .stats strong {
+    overflow-wrap: anywhere;
+  }
+}

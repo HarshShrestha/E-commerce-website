@@ -1,0 +1,5 @@
+
+> forever-ecommerce@1.0.0 test:motion
+> node tests/motion.e2e.mjs
+
+PASS: 1440px: original structure, 10 latest/5 bestsellers, finite once-only reveals; 1440px: reduced motion has no active animations, hidden content or page overflow; 390px: original structure, 10 latest/5 bestsellers, finite once-only reveals; 390px: reduced motion has no active animations, hidden content or page overflow
