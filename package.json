@@ -14,7 +14,7 @@
     "test:motion": "node tests/motion.e2e.mjs"
   },
   "engines": {
-    "node": ">=24"
+    "node": ">=20"
   },
   "devDependencies": {
     "playwright": "^1.58.2"
