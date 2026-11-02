@@ -1,4 +1,5 @@
 {
+  "framework": null,
   "nodeVersion": "22.x",
   "installCommand": "npm ci --ignore-scripts",
   "buildCommand": "npm ci --prefix frontend && npm run build --prefix frontend",
