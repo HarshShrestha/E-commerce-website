@@ -1,8 +1,8 @@
 {
   "framework": null,
-  "installCommand": "npm ci --ignore-scripts",
-  "buildCommand": "npm run build",
-  "outputDirectory": "build",
+  "installCommand": "npm ci --ignore-scripts && npm install --prefix frontend --ignore-scripts",
+  "buildCommand": "npm run build --prefix frontend",
+  "outputDirectory": "frontend/build",
   "env": {
     "PLAYWRIGHT_SKIP_BROWSER_DOWNLOAD": "1"
   },
