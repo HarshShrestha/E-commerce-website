@@ -1,8 +1,19 @@
 export const API = (
   import.meta.env.VITE_BACKEND_URL || "http://localhost:4000"
 ).replace(/\/$/, "");
-export const imageUrl = (source) =>
-  source?.startsWith("/") ? `${API}${source}` : source;
+export const imageUrl = (source) => {
+  if (!source) return "";
+  if (
+    source.startsWith("http://") ||
+    source.startsWith("https://") ||
+    source.startsWith("blob:") ||
+    source.startsWith("data:") ||
+    source.startsWith("/assets/")
+  ) {
+    return source;
+  }
+  return source.startsWith("/") ? `${API}${source}` : `${API}/${source}`;
+};
 export async function request(
   path,
   { token, body, method = "GET", headers = {} } = {},

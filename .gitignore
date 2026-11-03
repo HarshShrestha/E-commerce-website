@@ -14,3 +14,5 @@ backend/data/cloudinary-manifest.json
 backend/data/catalog.local-backup.json
 backend/data/*.tmp
 frontend/src/data/*.tmp
+.vercel
+.env*

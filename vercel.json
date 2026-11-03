@@ -1,9 +1,8 @@
 {
   "framework": null,
-  "nodeVersion": "22.x",
   "installCommand": "npm ci --ignore-scripts",
-  "buildCommand": "npm ci --prefix frontend && npm run build --prefix frontend",
-  "outputDirectory": "frontend/build",
+  "buildCommand": "npm run build",
+  "outputDirectory": "build",
   "env": {
     "PLAYWRIGHT_SKIP_BROWSER_DOWNLOAD": "1"
   },
