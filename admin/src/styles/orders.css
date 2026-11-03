@@ -11,14 +11,14 @@
   padding-bottom: 20px;
 }
 .order-heading p {
-  font-size: 12px;
+  font-size: 14px;
   color: var(--muted);
   margin-top: 6px;
 }
 .order-heading label {
   margin: 0;
   min-width: 180px;
-  font-size: 11px;
+  font-size: 14px;
 }
 .order-body {
   display: grid;
@@ -38,16 +38,16 @@
   object-fit: cover;
 }
 .order-item strong {
-  font-size: 13px;
+  font-size: 14px;
   font-weight: 500;
 }
 .order-item p {
-  font-size: 12px;
+  font-size: 14px;
   color: var(--muted);
 }
 address {
   font-style: normal;
-  font-size: 13px;
+  font-size: 14px;
   color: var(--muted);
   overflow-wrap: anywhere;
 }
@@ -60,7 +60,7 @@ address strong {
   display: flex;
   justify-content: space-between;
   gap: 16px;
-  font-size: 12px;
+  font-size: 14px;
 }
 .order-bottom small {
   font-weight: 400;

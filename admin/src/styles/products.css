@@ -1,7 +1,7 @@
 .panel {
   background: var(--panel);
   border: 1px solid var(--line);
-  border-radius: 6px;
+  border-radius: 0;
   overflow: hidden;
 }
 .panel-tools {
@@ -27,17 +27,17 @@ table {
   min-width: 650px;
 }
 th {
-  font-size: 11px;
+  font-size: 14px;
   font-weight: 500;
-  color: var(--muted);
-  padding: 12px 24px;
-  background: var(--soft);
+  color: var(--ink);
+  padding: 16px 24px;
+  background: var(--surface);
   border-block: 1px solid var(--line);
 }
 td {
   padding: 16px 24px;
   border-bottom: 1px solid var(--line);
-  font-size: 12px;
+  font-size: 14px;
 }
 tr:last-child td {
   border-bottom: 0;
@@ -55,12 +55,12 @@ tr:last-child td {
 }
 .product-cell strong {
   font-weight: 500;
-  font-size: 13px;
+  font-size: 14px;
 }
 .product-cell small {
   display: block;
   color: var(--muted);
-  font-size: 11px;
+  font-size: 14px;
   margin-top: 4px;
 }
 .product-form {
@@ -78,10 +78,10 @@ tr:last-child td {
 }
 .upload {
   height: 120px;
-  border: 1px dashed #adb59e;
+  border: 1px dashed var(--control);
   position: relative;
-  background: var(--soft);
-  border-radius: 4px;
+  background: var(--surface);
+  border-radius: 0;
   overflow: hidden;
   cursor: pointer;
   align-items: center;
@@ -94,7 +94,7 @@ tr:last-child td {
 }
 .upload small {
   display: block;
-  font-size: 11px;
+  font-size: 14px;
 }
 .upload img {
   width: 100%;
@@ -129,19 +129,20 @@ tr:last-child td {
 }
 .size-choices span {
   width: 48px;
-  height: 46px;
-  border: 1px solid var(--line);
+  height: 48px;
+  border: 1px solid var(--control);
+  border-radius: 0;
   display: grid;
   place-items: center;
 }
 .size-choices input:checked + span {
-  background: var(--accent);
+  background: #111;
   color: white;
-  border-color: var(--accent);
+  border-color: #111;
 }
 .size-choices input:focus-visible + span {
-  outline: 3px solid #7b9265;
-  outline-offset: 3px;
+  outline: 2px solid var(--ink);
+  outline-offset: 4px;
 }
 .checkbox {
   flex-direction: row;
@@ -151,17 +152,19 @@ tr:last-child td {
 .error,
 .success {
   padding: 14px 18px;
-  border-radius: 4px;
-  font-size: 13px;
+  border-radius: 0;
+  font-size: 14px;
   margin: 12px 24px 20px;
 }
 .error {
-  background: #fff0ee;
-  color: #a3312b;
+  background: #fdf2f2;
+  color: var(--danger);
+  border: 1px solid #f8d7da;
 }
 .success {
-  background: #eaf1e4;
-  color: #365229;
+  background: #f0fdf4;
+  color: #166534;
+  border: 1px solid #bbf7d0;
 }
 .product-form > .error,
 .product-form > .success {

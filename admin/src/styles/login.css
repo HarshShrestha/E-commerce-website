@@ -24,9 +24,9 @@
   margin-bottom: 48px;
 }
 .login-form h2 {
-  font-family: Georgia, serif;
-  font-size: 36px;
+  font-size: 32px;
   margin: 12px 0 28px;
+  font-weight: 500;
 }
 .login-form button {
   width: 100%;

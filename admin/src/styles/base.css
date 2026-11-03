@@ -1,22 +1,30 @@
 :root {
-  font-family: Arial, Helvetica, sans-serif;
-  background: #f7f7f2;
-  color: #282d24;
-  --bg: #f7f7f2;
-  --panel: #fff;
-  --soft: #efefe7;
-  --line: #dddfd5;
-  --ink: #282d24;
-  --muted: #656c5d;
+  font-family: Outfit, Arial, sans-serif;
+  font-synthesis: none;
+  background: var(--canvas);
+  color: var(--ink);
+  --canvas: #ffffff;
+  --surface: #f8f8f8;
+  --panel: #ffffff;
+  --soft: #f8f8f8;
+  --line: #d1d5db;
+  --control: #858580;
+  --ink: #374151;
+  --muted: #5d6573;
   --accent: #222;
+  --brand: #c586a5;
+  --white: #fff;
+  --danger: #a32821;
 }
 * {
   box-sizing: border-box;
 }
 body {
   margin: 0;
-  font-size: 14px;
-  line-height: 1.6;
+  font-size: 16px;
+  line-height: 1.5;
+  background: var(--canvas);
+  color: var(--ink);
 }
 h1,
 h2,
@@ -25,16 +33,15 @@ p {
 }
 h1,
 h2 {
-  font-weight: 400;
+  font-weight: 500;
+  letter-spacing: 0;
+  line-height: 1.12;
 }
 h1 {
-  font-family: Georgia, serif;
-  font-size: 38px;
-  line-height: 1.2;
-  letter-spacing: -1px;
+  font-size: 42px;
 }
 h2 {
-  font-size: 19px;
+  font-size: 30px;
 }
 a {
   color: inherit;
@@ -49,63 +56,68 @@ textarea {
 button,
 .button {
   cursor: pointer;
-  min-height: 46px;
-  border: 1px solid var(--accent);
-  border-radius: 5px;
-  background: var(--accent);
+  min-height: 48px;
+  border: 1px solid #111;
+  border-radius: 0;
+  background: #111;
   color: white;
-  padding: 10px 20px;
+  padding: 12px 24px;
   display: inline-flex;
   justify-content: center;
   align-items: center;
   font-size: 14px;
+  font-weight: 500;
+}
+button:hover {
+  opacity: 0.85;
 }
 button:disabled {
-  opacity: 0.5;
+  opacity: 0.55;
   cursor: wait;
 }
 .outline {
   background: transparent;
   color: var(--ink);
-  border-color: var(--line);
+  border-color: var(--control);
+  border-radius: 0;
 }
 .text {
   background: none;
   color: var(--ink);
   text-decoration: underline;
+  text-underline-offset: 4px;
   border: 0;
 }
 .danger {
   background: transparent;
-  color: #a3312b;
-  border: 1px solid #e9c5c2;
+  color: var(--danger);
+  border: 1px solid var(--danger);
   padding: 8px 12px;
+  border-radius: 0;
 }
 .eyebrow {
-  font-size: 10px;
-  letter-spacing: 1.8px;
-  color: var(--muted);
-  font-weight: 600;
-  display: block;
+  font-size: 14px;
+  font-weight: 500;
+  letter-spacing: 1px;
 }
 .muted {
-  font-size: 12px;
+  font-size: 14px;
   color: var(--muted);
 }
 input,
 select,
 textarea {
   color: var(--ink);
-  background: var(--panel);
-  border: 1px solid var(--line);
-  border-radius: 4px;
-  min-height: 46px;
+  background: var(--canvas);
+  border: 1px solid var(--control);
+  border-radius: 0;
+  min-height: 48px;
   padding: 10px 12px;
   width: 100%;
   min-width: 0;
 }
 label {
-  font-size: 13px;
+  font-size: 14px;
   display: flex;
   flex-direction: column;
   gap: 8px;
@@ -117,17 +129,21 @@ fieldset {
   margin: 0 0 24px;
 }
 legend {
-  font-size: 13px;
+  font-size: 14px;
+  font-weight: 600;
   margin-bottom: 12px;
 }
-input[type="checkbox"] {
-  width: 18px;
-  min-height: 18px;
-  accent-color: var(--accent);
+input[type="checkbox"],
+input[type="radio"] {
+  width: 20px;
+  height: 20px;
+  min-height: 20px;
+  accent-color: var(--ink);
+  padding: 0;
 }
 :focus-visible {
-  outline: 3px solid #7b9265;
-  outline-offset: 3px;
+  outline: 2px solid var(--ink);
+  outline-offset: 4px;
 }
 .wordmark {
   display: inline-flex;
@@ -136,7 +152,7 @@ input[type="checkbox"] {
 }
 .brand-art {
   display: block;
-  width: 155px;
+  width: 144px;
   height: auto;
   max-width: 100%;
 }

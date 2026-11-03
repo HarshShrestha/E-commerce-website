@@ -54,7 +54,7 @@
     gap: 8px;
   }
   .sidebar nav a {
-    font-size: 12px;
+    font-size: 14px;
     gap: 8px;
     padding: 8px 12px;
     min-height: 44px;
@@ -68,7 +68,7 @@
   .sidebar-bottom button {
     min-height: 40px;
     padding: 6px 12px;
-    font-size: 12px;
+    font-size: 14px;
   }
   .workspace {
     margin-left: 0;
@@ -76,7 +76,7 @@
   .admin-header {
     height: 64px;
     padding-inline: 20px;
-    font-size: 10px;
+    font-size: 14px;
   }
   .admin-main {
     padding: 28px 20px;
@@ -97,10 +97,10 @@
     padding: 16px 12px;
   }
   .stats span {
-    font-size: 10px;
+    font-size: 14px;
   }
   .stats strong {
-    font-size: 23px;
+    font-size: 26px;
   }
   .panel-tools {
     padding: 20px;
@@ -155,16 +155,16 @@
     margin: auto;
   }
   .eyebrow {
-    font-size: 9px;
+    font-size: 14px;
   }
   .error {
     margin-inline: 0;
   }
   .demo {
-    font-size: 10px;
+    font-size: 14px;
   }
   .order .eyebrow {
-    font-size: 10px;
+    font-size: 14px;
   }
   .panel .error {
     margin-inline: 16px;
@@ -174,58 +174,6 @@
   * {
     scroll-behavior: auto !important;
   }
-}
-@media (prefers-color-scheme: dark) {
-  :root {
-    --bg: #191c17;
-    --panel: #22271e;
-    --soft: #30372a;
-    --line: #47513e;
-    --ink: #f0f2ec;
-    --muted: #b1bba7;
-    --accent: #4c633c;
-    background: var(--bg);
-    color: var(--ink);
-  }
-  .error {
-    background: #3c2421;
-    color: #ffb1a8;
-  }
-  .success {
-    background: #273b23;
-    color: #b9dca5;
-  }
-  .danger {
-    color: #ffb1a8;
-    border-color: #6e403a;
-  }
-}
-/* Supporting text stays readable at desktop and mobile sizes. */
-.eyebrow,
-.muted,
-.sidebar > .eyebrow,
-.sidebar nav a,
-.sidebar-bottom > span,
-.sidebar-bottom button,
-.admin-header,
-.demo,
-.stats span,
-th,
-td,
-.product-cell strong,
-.product-cell small,
-label,
-legend,
-.upload small,
-.error,
-.success,
-.order-heading p,
-.order-heading label,
-.order-item strong,
-.order-item p,
-address,
-.order-bottom {
-  font-size: 14px;
 }
 @media (max-width: 760px) {
   .stats {
